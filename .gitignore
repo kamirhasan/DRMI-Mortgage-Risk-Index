@@ -1,0 +1,29 @@
+# Raw PSID data files — NEVER upload these
+*.dta
+*.sav
+J*.xlsx
+fam*.xlsx
+ind*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large data files not for sharing
+08_Processed/raw/
+01_PSID/
+06_ACS/raw/
+
+# Manuscript working files
+*.docx
+*.pdf
+cover_letter*
+title_page*
