@@ -1,0 +1,10 @@
+variable,annual,hourly,label
+w_childcare,33140.0,15.93,Childcare Workers
+w_cook,37730.0,18.14,"Cooks, Restaurant"
+w_housekeeping,36180.0,17.39,Maids & Housekeeping Cleaners
+w_landscaping,40880.0,19.66,Landscaping Workers
+w_maintenance,52430.0,25.21,Maintenance & Repair Workers
+w_eldercare,47090.0,22.64,Social & Human Service Assistants
+w_education,33080,15.9,Teacher Assistants (BLS 2024 estimate)
+w_financial,160210.0,77.02,Personal Financial Advisors
+w_personal_care,36180.0,17.39,Personal Care (mapped to Housekeeping rate)
