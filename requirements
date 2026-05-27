@@ -1,62 +1,27 @@
-## How to Reproduce the Analysis
+# DRMI Research — Python Requirements
+# Tested on Python 3.12.7 (Anaconda base environment)
+# Install: pip install -r requirements.txt --break-system-packages
 
-### Requirements
-- Python 3.12+ (Anaconda recommended)
-- See `requirements.txt` for full package list
+# Core data science
+pandas>=2.1.0
+numpy>=1.26.0
+scipy>=1.11.0
 
-### Setup
-```bash
-git clone https://github.com/[YOUR_GITHUB_USERNAME]/DRMI-Mortgage-Risk-Index
-cd DRMI-Mortgage-Risk-Index
-pip install -r requirements.txt
-```
+# Statistical modelling
+statsmodels>=0.14.0
+linearmodels>=5.4
 
-### Run
-1. Start Jupyter: `jupyter notebook`
-2. Open and run `notebooks/DRMI_data_analysis_FINAL.ipynb` (Cells 0-8 in order)
-3. Open and run `notebooks/DRMI_regression_analysis_FINAL.ipynb` (Cells 0-19 in order)
+# Machine learning / sklearn utilities
+scikit-learn>=1.3.0
 
-### File Paths
-The notebooks use relative paths from the project root. Set `BASE = os.getcwd()` in Cell 0.
-All processed data files must be in `data/` subfolder structured as `08_Processed/analytical/`
-and `08_Processed/merged/` to match the notebook path conventions.
+# Visualisation
+matplotlib>=3.8.0
+seaborn>=0.13.0
 
----
+# Notebook environment
+jupyter>=1.0.0
+ipykernel>=6.26.0
 
-## DRMI Formula
-
-```
-DRMI = DSV_annual / (Mortgage_Balance x LGD)
-
-DSV_annual = [H_housework x $17.39 + H_childcare x $15.93 + H_eldercare x $22.64] x 52
-
-Where:
-  H_i = weekly hours in category i (PSID time-use supplement)
-  Wages = BLS OEWS May 2024 (SOC 37-2012, 39-9011, 21-1093)
-  LGD   = 0.20 (Basel Committee residential mortgage floor)
-```
-
----
-
-## Citation
-
-If you use this code or data in your research, please cite:
-
-```
-Khan, A.H. (2026), Shadow Capital and Mortgage Credit Risk: An AI-Powered Domestic
-Risk Mitigation Index for Financial Inclusion of American Homemaker Households,
-Working Paper, SSRN Paper No. [PAPER_NUMBER], doi: [SSRN_DOI]
-```
-
----
-
-## License
-
-Code: MIT License — see LICENSE file.
-Data: See individual data source terms above. Derived datasets are shared under CC BY 4.0.
-
----
-
-## Contact
-
-Amir Hasan Khan | khan.295@wright.edu | [ORCID](https://orcid.org/0009-0006-8360-9357)
+# Excel/data file reading
+openpyxl>=3.1.0
+xlrd>=2.0.1
